@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=640; maximum-scale=1.0; user-scalable=0;">
+	<meta name="title" content="拉霸立即抽、好禮獎不完！- 富邦人壽網路投保"/>
+	<meta name="description" content="活動期間使用富邦人壽網路投保旅平險完成且核保成功，單筆保單保費滿200元(200~499元)可拉霸1次，滿500元(500元以上)可拉霸3次！立即投保立即抽，豐富獎品等你拿！"/>
+	<meta name="keywords" content="富邦人壽, 富邦保險,旅平險,網路投保,拉霸立即抽"/>
+	<title>拉霸立即抽、好禮獎不完！- 富邦人壽網路投保</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/jquery.rollbar.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/lib/jquery-1.9.1.min.js"></script>
+	<script src="js/lib/jquery.easing.js"></script>
+	<script src="js/lib/TweenMax.min.js"></script>
+	<script src="js/lib/jquery.mousewheel.js"></script>
+	<script src="js/lib/jquery.rollbar.min.js"></script>
+	<script src="js/lib/jquery.pictureani-1.0.js"></script>
+  <script src="js/lib/easeljs-0.8.0.min.js"></script>
+  <script src="js/lib/tweenjs-0.6.0.min.js"></script>
+  <script src="js/lib/movieclip-0.8.0.min.js"></script>
+  <script src="js/lib/preloadjs-0.6.0.min.js"></script>
+	<script src="js/lib/SlotMachine.js"></script>
+	<script src="js/lib/fastclick.js"></script>
+	<script src="js/fun.js"></script>
+	<script src="js/m-money.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/index.js"></script>
+
+	<!--[if lte IE 8]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+	</script><![endif]-->
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav">
+			<li class="logo">
+				<a target="_blank" href="https://www.fubon.com/life/direct/"></a>
+			</li>
+			<li class="nav-activity">
+				<a href="javascript:;"></a>
+			</li>
+			<li class="nav-insurance">
+				<a target="_blank" href="https://direct.fubonlife.com.tw/m/PA/RedirctToPcOrMobile?actionName=TA"></a>
+			</li>
+			<li class="nav-award">
+				<a target="_blank" href="https://www.fubon.com/life/direct/m/promo/m-award.html"></a>
+			</li>
+		</ul>
+		<div class="main-box">
+			<div class="light"></div>
+			<div class="light-mask"></div>
+			<div class="main">
+				<div class="main-title">
+					<div class="title-txt1"></div>
+					<div class="title-txt2"></div>
+					<div class="title-txt3"></div>
+				</div>
+				<div class="txt"></div>
+				<div class="notes">
+					<div class="login active">請先<a href="javascript:;">登入會員</a></div>
+					<div class="chance">您有<a href="javascript:;">2</a>次拉霸機會</div>
+				</div>
+				<div class="slot-machine">
+					<div class="slot-box"></div>
+					<div class="slot-handle">
+						<a href="javascript:;"></a>
+					</div>
+					<div class="slot-txt">
+						<a href="javascript:;"></a>
+					</div>
+					<div class="slot-list1 s-l">
+						<ul>
+							<li class="gift3"><img src="images/m-Slot-01.png" /></li>
+							<li class="gift2"><img src="images/m-Slot-02.png" /></li>
+							<li class="gift1"><img src="images/m-Slot-03.png" /></li>
+							<li class="gift3"><img src="images/m-Slot-01.png" /></li>
+							<li class="gift2"><img src="images/m-Slot-02.png" /></li>
+							<li class="gift1"><img src="images/m-Slot-03.png" /></li>
+						</ul>
+					</div>
+					<div class="slot-list2 s-l">
+						<ul>
+							<li class="gift3"><img src="images/m-Slot-01.png" /></li>
+							<li class="gift2"><img src="images/m-Slot-02.png" /></li>
+							<li class="gift1"><img src="images/m-Slot-03.png" /></li>
+							<li class="gift3"><img src="images/m-Slot-01.png" /></li>
+							<li class="gift2"><img src="images/m-Slot-02.png" /></li>
+							<li class="gift1"><img src="images/m-Slot-03.png" /></li>
+						</ul>
+					</div>
+					<div class="slot-list3 s-l">
+						<ul>
+							<li class="gift3"><img src="images/m-Slot-01.png" /></li>
+							<li class="gift2"><img src="images/m-Slot-02.png" /></li>
+							<li class="gift1"><img src="images/m-Slot-03.png" /></li>
+							<li class="gift3"><img src="images/m-Slot-01.png" /></li>
+							<li class="gift2"><img src="images/m-Slot-02.png" /></li>
+							<li class="gift1"><img src="images/m-Slot-03.png" /></li>
+						</ul>
+					</div>
+					<div id="loginBtn" class="login-btn">
+						<a href="javascript:;"></a>
+					</div>
+					<div class="record-btn">
+						<a href="javascript:;"></a>
+					</div>
+					<div class="lottery-btn">
+						<a target="_blank" href="https://direct.fubonlife.com.tw/m/PA/RedirctToPcOrMobile?actionName=TA"></a>
+					</div>
+					<div class="goldBox">
+						<canvas id="canvas" width="640" height="91" ></canvas>
+							<!--<div class="gold"></div>-->
+					</div>
+					<div class="bulb-box left">
+						<div class="b1 bulb active"></div>
+						<div class="b2 bulb active"></div>
+						<div class="b3 bulb active"></div>
+						<div class="b4 bulb active"></div>
+						<div class="b5 bulb active"></div>
+						<div class="b6 bulb active"></div>
+						<div class="b7 bulb active"></div>
+						<div class="b8 bulb active"></div>
+						<div class="b9 bulb active"></div>
+						<div class="b10 bulb active"></div>
+					</div>
+					<div class="bulb-box right">
+						<div class="b15 bulb active"></div>
+						<div class="b16 bulb active"></div>
+						<div class="b17 bulb active"></div>
+						<div class="b18 bulb active"></div>
+						<div class="b19 bulb active"></div>
+						<div class="b20 bulb active"></div>
+						<div class="b21 bulb active"></div>
+						<div class="b22 bulb active"></div>
+						<div class="b23 bulb active"></div>
+						<div class="b24 bulb active"></div>
+					</div>
+					<div class="win-icon"></div>
+				</div>
+			</div>
+		</div>
+		<div class="notes-box">
+			<div class="notes-controller">
+				<a href="javacript:;"><span></span></a>
+			</div>
+			<div class="notes-content">
+				<div class="notes-content-bg"></div>
+				<div class="notes-main-box">
+					<div class="notes-main">
+						<div class="item1">
+							<div class="item-name">
+								<span>活動名稱</span>
+							</div>
+							<div class="item-cont">
+								拉霸立即抽、好禮獎不完！
+							</div>
+						</div>
+						<div class="item2">
+							<div class="item-name">
+								<span>活動期間</span>
+							</div>
+							<div class="item-cont">
+								2016/10/18-2017/1/8
+							</div>
+						</div>
+						<div class="item3">
+							<div class="item-name">
+								<span>活動辦法</span>
+							</div>
+							<div class="item-cont">
+								活動期間，網路投保「<a target="_blank" href="https://direct.fubonlife.com.tw/m/TA/SpreadSheet">富邦人壽快易保旅行平安保險</a>」成功者，單筆保單保費滿200元(200~499元)可拉霸1次，滿500元(500元以上)可拉霸3次！若拉霸結果顯示出以下得獎示意圖，即可獲得相對應的獎品一份。立即投保立即抽，豐富獎品等你拿！
+							</div>
+						</div>
+						<div class="item4">
+							<div class="item-cont">
+								<table>
+								  <tr>
+								    <th style="width: 220px;">得獎示意圖<br>(圖案須依序顯示)</th>
+								    <th style="width: 118px;">獎項</th>
+								    <th style="width: 386px;">獎品名稱</th>
+								    <th style="width: 110px;">總數量</th>
+								  </tr>
+								  <tr>
+								    <td><img src="images/m-note-pic-01.png" /></td>
+								    <td>頭獎</td>
+								    <td>中華航空東北亞、<br>東南亞航點自選<br>經濟艙來回機票 1張</td>
+								    <td>5</td>
+								  </tr>
+								  <tr>
+								    <td><img src="images/m-note-pic-02.png" /></td>
+								    <td>二獎</td>
+								    <td>1,000元新光三越<br>禮券1份</td>
+								    <td>20</td>
+								  </tr>
+								  <tr>
+								    <td><img src="images/m-note-pic-03.png" /></td>
+								    <td>三獎</td>
+								    <td>LINE FRIENDS<br>行動電源1個</td>
+								    <td>18</td>
+								  </tr>
+								  <tr>
+								    <td><img src="images/m-note-pic-04.png" /></td>
+								    <td>四獎</td>
+								    <td>500元7-11<br>禮券1份</td>
+								    <td>12</td>
+								  </tr>
+								  <tr>
+								    <td><img src="images/m-note-pic-05.png" /></td>
+								    <td>普獎</td>
+								    <td>
+								    	<a class="external-link" link="http://www.topshuttle.info/wiho/" href="javascript:;">
+								    		特樂通海外上網＆<br>第一快車機場接送<br>雙重優惠碼
+								    	</a>
+								    </td>
+
+								    <td>3000</td>
+								  </tr>
+								</table>
+							</div>
+						</div>
+						<div class="item5">
+							<div class="item-name">
+								<span>獎品說明</span>
+							</div>
+							<div class="item-cont">
+								<div class="first-award">
+									<h3><img src="images/m-note-tick.png" /><span>頭獎</span></h3>
+									<p>中華航空東北亞、東南亞航線可自選航點包括：日本(名古屋、大阪、宮崎、富山、廣島、札幌、東京[成田或羽田]、沖繩[那霸或石垣島]、福岡、靜岡、高松、鹿兒島)、韓國(釜山、首爾)、印尼(峇里島、泗水、雅加達)、新加坡、柬埔寨(金邊)、泰國(曼谷)、緬甸(仰光)、菲律賓(馬尼拉、長灘島)、越南(河內、胡志明市)、馬來西亞(吉隆坡、檳城)，得獎者可從中任選一個航點往返台北，相關使用辦法請依照正式【中獎兌換憑証】內容說明為準。</p>
+								</div>
+								<div class="other-award">
+									<h3><img src="images/m-note-tick.png" /><span>普獎</span></h3>
+									<p>旅人出國的好夥伴～海外上網就找Wi-Ho特樂通、機場接送就選第一快車，特別提供幸運的富邦人壽網路投保旅平險保戶獨家優惠，讓您的行程更感便捷愉悅[<a class="external-link" link="http://www.topshuttle.info/wiho/" href="javascript:;">優惠介紹</a>]</p>
+								</div>
+							</div>
+						</div>
+						<div class="item6">
+							<div class="item-name">
+								<span>得獎公布</span>
+							</div>
+							<div class="item-cont">
+								<p>頭獎至四獎的得獎名單將公布於<a target="_blank" href="https://www.fubon.com/life/direct/m/promo/m-award.html">富邦人壽網路投保活動集結頁</a>，普獎將直接於保戶抽獎後顯示於「抽獎紀錄」內，不另行公布。</p>
+								<table>
+									<tr>
+										<th>拉霸活動截止時間</th>
+										<td style="color: #F00;">2017/1/8 23:59:59</td>
+									</tr>
+									<tr>
+										<th>得獎名單公布日期</th>
+										<td>2017/1/13</td>
+									</tr>
+									<tr>
+										<th>得獎通知函寄送日期</th>
+										<td>2017/1/13</td>
+									</tr>
+									<tr>
+										<th>得獎人回覆資料截止日期</th>
+										<td>2017/1/20</td>
+									</tr>
+									<tr>
+										<th>獎品寄送日期</th>
+										<td>2017/1/26前</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="item7">
+							<div class="item-name">
+								<span>注意事項</span>
+							</div>
+							<div class="item-cont">
+								<ul>
+									<li>參加活動者必須遵守活動規範及其他有關規定，如未遵循者，本公司得拒絕其參與或取消其得獎資格，並對於任何破壞本活動行為保留相關權利。活動得獎人若取消保單將喪失中獎資格。</li>
+									<li>本公司將主動以電子郵件通知活動得獎人，請活動得獎人於指定回覆資料截止日期前，提供真實姓名、身分證字號、地址、電話…等個人資料以完成相關領獎作業〈填妥領獎收據及附上得獎人身分證正反面影本寄回本公司〉，逾期回覆或未回覆者視為棄權，本公司不遞補名額。</li>
+									<li>本活動獎項屬於機會中獎，依中華民國所得稅法及各類所得扣繳率標準規定，機會中獎金額超過新台幣20,000元者，得獎者需先行繳納10%機會中獎所得稅款(不足1元部分，則四捨五入至元)，非中華民國境內居住者，無論金額大小皆需先行繳納20%機會中獎所得稅款，詳細規定，請參閱<a class="external-link" link="http://www.etax.nat.gov.tw/etwmain" href="javascript:;">財政部稅務入口網</a>。無論扣繳與否，均需列入活動得獎人當年度之個人機會中獎所得，並由本公司開立扣繳憑單予活動得獎人，活動得獎人需依規定填寫並繳交相關資料方可領獎。如不願意配合者，則視為自動放棄得獎資格。</li>
+									<li>本活動所提供之獎品以實物為主，不得折換現金、兌換其他商品或優惠，亦不得將本活動得獎資格轉讓或轉售予他人，本公司保有更換同值獎品之權利。獎品相關使用辦法請依照兌換券內容說明為準。一旦活動得獎人領取獎品後，若有遺失或被竊，本公司不發給任何證明或補償。</li>
+									<li>若活動得獎人未於時間內回覆得獎人資料或提供資料有誤，導致無法通知得獎或獎品無法寄送者，視同活動得獎人放棄權利並自負其責，本公司不另行通知。</li>
+									<li>本活動僅限在台灣地區（包含金門、馬祖、澎湖）設有住居所之本國人參加。獎品之寄送亦僅限前述地區，如獎品寄送地點為前述地區以外之地區，本公司得取消得獎資格。</li>
+									<li>本活動如遇其他不可抗力之事由者，得順延之；本公司保有取消、終止、修改或暫停、審核民眾參加本活動資格及解釋本活動及獎品等細節之權利，其他相關事宜悉公布於「富邦人壽網路投保」活動網頁，並依其相關規定辦理。</li>
+									<li>本保險商品詳細給付內容或條件限制，請參閱<a target="_blank" href="https://direct.fubonlife.com.tw/m/Product/ELA">商品介紹頁</a>。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-bg"></div>
+			<p class="f1">富邦人壽保險股份有限公司</p>
+			<p class="f2">地址：台北市松山區敦化南路一段108號14樓</p>
+			<ul class="f3">
+				<li>
+					<a target="_blank" href="https://www.fubon.com/life/direct/Faq.html">常見問題</a>
+				</li>
+				<li class="line"></li>
+				<li><a href="tel:0809000550">客服電話0809-000-550</a></li>
+				<li class="line"></li>
+				<li>
+					<a target="_blank" href="https://me.fubonlife.com.tw/B01001080000_Site.view">服務據點</a>
+				</li>
+			</ul>
+			<ul class="f4">
+				<li>
+					<a target="_blank" href="https://www.fubon.com/life/direct/Security.html">交易機制安全說明</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a target="_blank" href="https://www.fubon.com/life/direct/Law.html">法令公告</a>
+				</li>
+				<li class="line"></li>
+				<li>
+					<a target="_blank" href="https://www.fubon.com/financialholdings/privacy_policy/privacy.html">隱私權聲明</a>
+				</li>
+			</ul>
+			<p class="f5">© Fubon Life Insurance Co. Ltd. All Rights Reserved</p>
+		</div>
+	</div>
+	<div id="login" class="popup">
+    <div class="popup-mask"></div>
+    <div class="popup-box">
+      <div class="popup-main">
+        <div class="popup-content">
+        	<div class="pop-close-btn">
+			      <a href="javascript:;"></a>
+			    </div>
+          <div class="identity fill">
+          	<div class="fill-name">身分證字號</div>
+          	<div class="fill-cont">
+          		<input type="text" id="card_id" maxlength="10" prompt="請輸入身分證字號">
+          	</div>
+          </div>
+          <div class="pw fill">
+          	<div class="fill-name">密碼</div>
+          	<div class="fill-cont">
+          		<input type="password" id="pw">
+          	</div>
+          </div>
+          <div class="CAPTCHA fill">
+          	<div class="fill-name">驗證碼</div>
+          	<div class="fill-cont">
+          		<input type="text" id="captcha" prompt="請輸入驗證碼">
+          	</div>
+          	<div class="CAPTCHA-img">
+          		<img src="images/CAPTCHA.png" />
+          	</div>
+          	<div class="CAPTCHA-btn">
+          		<a href="javascript:;">
+          			<img src="images/m-pp-pic-turn.png" />
+          		</a>
+          	</div>
+          </div>
+          <div id="sendBtn" class="login-btn">
+          	<a href="javascript:;"></a>
+          </div>
+          <div class="signup">
+        		<a href="javascript:;">加入投保會員</a>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+	<div id="fail" class="popup">
+    <div class="popup-mask"></div>
+    <div class="popup-box">
+      <div class="popup-main">
+        <div class="popup-content">
+        	<div class="pop-close-btn">
+			      <a href="javascript:;"></a>
+			    </div>
+			    <div class="msg">下次手氣會更好，<br>預祝您旅途平安！</div>
+          <div class="true-btn">
+          	<a href="javascript:;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="win" class="popup">
+    <div class="popup-mask"></div>
+    <div class="popup-box">
+      <div class="popup-main">
+        <div class="popup-content">
+        	<div class="pop-close-btn">
+			      <a href="javascript:;"></a>
+			    </div>
+			    <div class="msg">
+			    	<p>2017/1/13我們會將</p>
+			    	<p>得獎通知函E-Mail給您</p>
+			    	<p>請密切留意</p>
+			    </div>
+          <div class="true-btn">
+          	<a href="javascript:;"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="record" class="popup">
+    <div class="popup-mask"></div>
+    <div class="popup-box">
+      <div class="popup-main">
+        <div class="popup-content">
+        	<div class="pop-close-btn">
+			      <a href="javascript:;"></a>
+			    </div>
+			    <div class="item-name">
+						<span>抽獎記錄</span>
+					</div>
+					<table class="item-title">
+						<tr>
+					    <th style="width: 128px;">抽獎日期</th>
+					    <th style="width: 112px;">抽獎時間</th>
+					    <th style="width: 215px;">抽獎結果</th>
+					    <th style="width: 107px;">保單號碼</th>
+					  </tr>
+					</table>
+					<div class="item-contnet">
+						<table>
+						  <tr>
+						    <td style="width: 128px;">2016/10/12</td>
+						    <td style="width: 112px;">10:58</td>
+						    <td style="width: 215px;">獲得普獎(優惠序號：<br>ABCD1234)</td>
+						    <td style="width: 107px;">20161<br>01233</td>
+						  </tr>
+						  <tr>
+						    <td>2016/10/12</td>
+						    <td>10:58</td>
+						    <td>獲得四獎</td>
+						    <td>20161<br>01233</td>
+						  </tr>
+						  <tr>
+						    <td>2016/10/12</td>
+						    <td>10:58</td>
+						    <td>未得獎</td>
+						    <td>20161<br>01233</td>
+						  </tr>
+						  <tr>
+						    <td>2016/10/12</td>
+						    <td>10:58</td>
+						    <td>獲得二獎</td>
+						    <td>20161<br>01233</td>
+						  </tr>
+							<tr>
+						    <td>2016/10/12</td>
+						    <td>10:58</td>
+						    <td>獲得普獎(優惠序號：<br>ABCD1234)</td>
+						    <td>20161<br>01233</td>
+						  </tr>
+						  <tr>
+						    <td>2016/10/12</td>
+						    <td>10:58</td>
+						    <td>獲得四獎</td>
+						    <td>20161<br>01233</td>
+						  </tr>
+						  <tr>
+						    <td>2016/10/12</td>
+						    <td>10:58</td>
+						    <td>未得獎</td>
+						    <td>20161<br>01233</td>
+						  </tr>
+						  <tr>
+						    <td>2016/10/12</td>
+						    <td>10:58</td>
+						    <td>獲得二獎</td>
+						    <td>20161<br>01233</td>
+						  </tr>
+						</table>
+					</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

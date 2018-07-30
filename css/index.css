@@ -1,0 +1,634 @@
+.main-box {
+  position: relative;
+  overflow: hidden; }
+
+.main {
+  position: relative;
+  width: 1100px;
+  height: 751px;
+  margin: 0 auto; }
+
+.main-title {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 787px;
+  height: 177px;
+  background: url("../images/txt-bg.png");
+  z-index: 1; }
+  .main-title .title-txt1 {
+    position: absolute;
+    top: 7px;
+    left: 188px;
+    width: 76px;
+    height: 79px;
+    background: url("../images/txt-01.png"); }
+  .main-title .title-txt2 {
+    position: absolute;
+    top: -1px;
+    left: 258px;
+    width: 77px;
+    height: 78px;
+    background: url("../images/txt-02.png"); }
+  .main-title .title-txt3 {
+    position: absolute;
+    top: -20px;
+    left: 330px;
+    width: 111px;
+    height: 109px;
+    background: url("../images/txt-03.png"); }
+
+.txt {
+  position: absolute;
+  top: 166px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 473px;
+  height: 25px;
+  background: url("../images/txt-04.png");
+  z-index: 1; }
+
+.notes {
+  position: absolute;
+  top: 214px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1; }
+  .notes a {
+    display: inline;
+    color: #B6292F; }
+  .notes .login {
+    display: none; }
+    .notes .login a {
+      text-decoration: underline; }
+    .notes .login.active {
+      display: block; }
+  .notes .chance {
+    display: none; }
+    .notes .chance.active {
+      display: block; }
+
+.slot-handle {
+  position: absolute;
+  top: 214px;
+  left: 837px;
+  width: 160px;
+  height: 382px;
+  background: url("../images/Slot-hand.png") 0 0 no-repeat;
+  cursor: pointer; }
+  .slot-handle.active {
+    background: url("../images/Slot-hand.png") 0 -382px no-repeat; }
+
+.slot-machine {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 698px;
+  height: 642px;
+  background: url("../images/Slot-machine.png"); }
+  .slot-machine .slot-box {
+    position: absolute;
+    top: 181px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: url("../images/Slot-box.png"); }
+  .slot-machine .slot-txt {
+    position: absolute;
+    top: 19px;
+    left: 731px;
+    width: 103px;
+    height: 104px;
+    background: url("../images/Slot-txt.png") 0 0 no-repeat;
+    cursor: pointer;
+    z-index: 1; }
+  .slot-machine .s-l {
+    position: absolute;
+    width: 139px;
+    height: 274px;
+    top: 117px;
+    font-size: 0;
+    overflow: hidden; }
+    .slot-machine .s-l ul {
+      top: 65px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100px; }
+  .slot-machine .slot-list1 {
+    left: 111px; }
+  .slot-machine .slot-list2 {
+    left: 277px; }
+  .slot-machine .slot-list3 {
+    left: 442px; }
+  .slot-machine .login-btn {
+    position: absolute;
+    top: 447px;
+    left: 84px;
+    width: 108px;
+    height: 86px;
+    background: url("../images/bt-01.png") 0 0 no-repeat; }
+    .slot-machine .login-btn:hover {
+      background: url("../images/bt-01.png") 0 -86px no-repeat; }
+    .slot-machine .login-btn.login {
+      background: url("../images/bt-06.png") 0 0 no-repeat; }
+      .slot-machine .login-btn.login:hover {
+        background: url("../images/bt-06.png") 0 -86px no-repeat; }
+  .slot-machine .record-btn {
+    position: absolute;
+    top: 447px;
+    left: 199px;
+    width: 166px;
+    height: 89px;
+    background: url("../images/bt-02.png") 0 0 no-repeat; }
+    .slot-machine .record-btn:hover {
+      background: url("../images/bt-02.png") 0 -89px no-repeat; }
+  .slot-machine .lottery-btn {
+    position: absolute;
+    top: 447px;
+    left: 373px;
+    width: 250px;
+    height: 89px;
+    background: url("../images/bt-03.png") 0 0 no-repeat; }
+    .slot-machine .lottery-btn:hover {
+      background: url("../images/bt-03.png") 0 -89px no-repeat; }
+  .slot-machine .gold {
+    position: absolute;
+    width: 165px;
+    height: 81px;
+    background: url("../images/gold-money.png") 0 0 no-repeat; }
+  .slot-machine .goldBox {
+    /*width: image-width('../images/gold-money.png');
+    height: image-height('../images/gold-money.png');*/
+    position: absolute;
+    left: -200px;
+    top: 520px; }
+  .slot-machine .bulb {
+    position: absolute;
+    width: 22px;
+    height: 21px;
+    background: url("../images/Slot-light.png") 0 0 no-repeat; }
+    .slot-machine .bulb.active {
+      background: url("../images/Slot-light.png") 0 -21px no-repeat; }
+  .slot-machine .b1 {
+    top: 58px;
+    left: 60px; }
+  .slot-machine .b2 {
+    top: 99px;
+    left: 55px; }
+  .slot-machine .b3 {
+    top: 133px;
+    left: 51px; }
+  .slot-machine .b4 {
+    top: 168px;
+    left: 46px; }
+  .slot-machine .b5 {
+    top: 203px;
+    left: 41px; }
+  .slot-machine .b6 {
+    top: 239px;
+    left: 37px; }
+  .slot-machine .b7 {
+    top: 278px;
+    left: 33px; }
+  .slot-machine .b8 {
+    top: 314px;
+    left: 29px; }
+  .slot-machine .b9 {
+    top: 351px;
+    left: 24px; }
+  .slot-machine .b10 {
+    top: 385px;
+    left: 20px; }
+  .slot-machine .b11 {
+    top: 488px;
+    left: 7px; }
+  .slot-machine .b12 {
+    top: 521px;
+    left: 7px; }
+  .slot-machine .b13 {
+    top: 554px;
+    left: 7px; }
+  .slot-machine .b14 {
+    top: 587px;
+    left: 7px; }
+  .slot-machine .b15 {
+    top: 58px;
+    left: 613px; }
+  .slot-machine .b16 {
+    top: 98px;
+    left: 619px; }
+  .slot-machine .b17 {
+    top: 133px;
+    left: 624px; }
+  .slot-machine .b18 {
+    top: 168px;
+    left: 629px; }
+  .slot-machine .b19 {
+    top: 204px;
+    left: 634px; }
+  .slot-machine .b20 {
+    top: 239px;
+    left: 639px; }
+  .slot-machine .b21 {
+    top: 278px;
+    left: 643px; }
+  .slot-machine .b22 {
+    top: 314px;
+    left: 647px; }
+  .slot-machine .b23 {
+    top: 351px;
+    left: 652px; }
+  .slot-machine .b24 {
+    top: 386px;
+    left: 656px; }
+  .slot-machine .b25 {
+    top: 488px;
+    left: 521px; }
+  .slot-machine .b26 {
+    top: 521px;
+    left: 521px; }
+  .slot-machine .b27 {
+    top: 554px;
+    left: 521px; }
+  .slot-machine .b28 {
+    top: 587px;
+    left: 521px; }
+  .slot-machine .win-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 160px;
+    width: 451px;
+    height: 209px;
+    background-image: url("../images/txt-05.png");
+    display: none; }
+
+.item-name {
+  width: 141px;
+  height: 53px;
+  background: url("../images/note-top-bg.png"); }
+  .item-name span {
+    position: absolute;
+    top: 15px;
+    left: 54px;
+    font-size: 17px;
+    color: #068B76;
+    font-weight: 700; }
+
+.notes-box {
+  position: relative; }
+  .notes-box .notes-controller {
+    position: relative;
+    margin-top: -5px;
+    width: 100%;
+    height: 65px;
+    background: url("../images/bg-note.png"); }
+    .notes-box .notes-controller span {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      display: block;
+      position: absolute;
+      width: 124px;
+      height: 22px;
+      background: url("../images/note-control-txt.png") 0 0 no-repeat; }
+    .notes-box .notes-controller.active span {
+      background: url("../images/note-control-txt.png") 0 -22px no-repeat; }
+  .notes-box .notes-content {
+    position: relative;
+    margin: 0 auto;
+    margin-top: -10px;
+    padding-bottom: 34px;
+    display: none; }
+    .notes-box .notes-content .notes-content-bg {
+      width: 100%;
+      height: 10px;
+      background: url("../images/bg-note-content.png") 0 0; }
+  .notes-box .notes-main-box {
+    background: #028E7C; }
+  .notes-box .notes-main {
+    position: relative;
+    width: 950px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 1.5;
+    overflow: auto; }
+    .notes-box .notes-main a {
+      display: inline;
+      text-decoration: underline;
+      color: #fffc0d; }
+  .notes-box .item1 {
+    position: relative;
+    margin: 28px 0 0 50px; }
+    .notes-box .item1 .item-cont {
+      position: absolute;
+      left: 147px;
+      top: 16px; }
+  .notes-box .item2 {
+    position: absolute;
+    left: 472px;
+    top: 28px;
+    width: 400px; }
+    .notes-box .item2 .item-cont {
+      position: absolute;
+      left: 147px;
+      top: 17px; }
+  .notes-box .item3 {
+    position: relative;
+    margin: 15px 0 0 50px; }
+    .notes-box .item3 .item-cont {
+      margin: 3px 0 0 54px; }
+  .notes-box .item4 {
+    position: relative;
+    margin: 10px 0 0 50px; }
+    .notes-box .item4 .item-cont {
+      margin: 8px 0 0 54px; }
+  .notes-box .item5 {
+    position: relative;
+    margin: 17px 0 0 50px; }
+    .notes-box .item5 .item-cont {
+      margin: 8px 0 0 54px; }
+    .notes-box .item5 h3 span {
+      font-size: 20px;
+      font-weight: 700;
+      display: inline-block;
+      position: relative;
+      top: -4px;
+      left: 4px; }
+    .notes-box .item5 h3 ~ h3 {
+      margin-top: 12px; }
+  .notes-box .item6 {
+    position: relative;
+    margin: 10px 0 0 50px; }
+    .notes-box .item6 .item-cont {
+      margin: 8px 0 0 54px; }
+    .notes-box .item6 table {
+      margin-top: 15px; }
+    .notes-box .item6 td {
+      height: 40px; }
+  .notes-box .item7 {
+    position: relative;
+    margin: 20px 0 0 50px; }
+    .notes-box .item7 .item-cont {
+      margin: 8px 0 0 54px; }
+    .notes-box .item7 ul {
+      line-height: 1.8;
+      list-style-type: decimal; }
+
+.light {
+  position: absolute;
+  top: -145px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 1043px;
+  height: 1284px;
+  background: url("../images/bg-light.png"); }
+
+.light-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 751px;
+  background: url("../images/bg-light-mask.png") center 0;
+  transform-origin: center center; }
+
+.star-box .star1 {
+  position: absolute;
+  width: 268px;
+  height: 271px;
+  background: url("../images/bg-star-big.png"); }
+.star-box .star2 {
+  position: absolute;
+  width: 107px;
+  height: 106px;
+  background: url("../images/bg-star-middle.png"); }
+.star-box .star3 {
+  position: absolute;
+  width: 31px;
+  height: 32px;
+  background: url("../images/bg-star-other01.png"); }
+.star-box .star4 {
+  position: absolute;
+  width: 51px;
+  height: 53px;
+  background: url("../images/bg-star-other02.png"); }
+.star-box .star5 {
+  position: absolute;
+  width: 103px;
+  height: 103px;
+  background: url("../images/bg-star-small.png"); }
+.star-box .s1 {
+  top: 458px;
+  left: 182px;
+  transform: scale(0.8) rotate(25deg); }
+.star-box .s2 {
+  top: 371px;
+  left: 33px; }
+.star-box .s3 {
+  top: 326px;
+  left: 178px;
+  transform: scale(0.6) rotate(17deg); }
+.star-box .s4 {
+  top: 314px;
+  left: 147px;
+  transform: scale(0.6) rotate(14deg); }
+.star-box .s5 {
+  top: 144px;
+  left: -87px; }
+.star-box .s6 {
+  top: 229px;
+  left: 211px;
+  transform: scale(0.7) rotate(24deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8; }
+.star-box .s7 {
+  top: 139px;
+  left: 66px;
+  transform: scale(0.9) rotate(24deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6; }
+.star-box .s8 {
+  top: 70px;
+  left: 928px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6; }
+.star-box .s9 {
+  top: 106px;
+  left: 1077px; }
+.star-box .s10 {
+  top: 133px;
+  left: 1029px;
+  transform: scale(0.8); }
+.star-box .s11 {
+  top: 278px;
+  left: 1006px; }
+.star-box .s12 {
+  top: 329px;
+  left: 962px;
+  transform: scale(0.6); }
+.star-box .s13 {
+  top: 426px;
+  left: 904px;
+  opacity: .6;
+  transform: scale(1.5); }
+
+.popup#login .popup-content {
+  width: 796px;
+  height: 524px;
+  background: url("../images/pp-pic-01.png"); }
+.popup#login .fill {
+  position: absolute;
+  font-size: 0; }
+.popup#login .fill-name {
+  display: inline-block;
+  min-width: 85px;
+  text-align: justify;
+  text-align-last: justify;
+  line-height: 36px;
+  font-size: 17px;
+  vertical-align: top; }
+.popup#login .fill-cont {
+  display: inline-block;
+  margin-left: 14px;
+  vertical-align: top; }
+.popup#login .identity {
+  top: 183px;
+  left: 198px; }
+.popup#login .user-id {
+  top: 233px;
+  left: 198px; }
+.popup#login .pw {
+  top: 233px;
+  left: 198px; }
+.popup#login .CAPTCHA {
+  top: 282px;
+  left: 198px; }
+.popup#login .CAPTCHA-show {
+  top: 332px;
+  left: 198px; }
+.popup#login .CAPTCHA-img {
+  display: inline-block;
+  margin-left: -2px;
+  margin-top: -2px;
+  vertical-align: top; }
+.popup#login .CAPTCHA-btn {
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 7px;
+  vertical-align: top; }
+.popup#login .login-btn {
+  position: absolute;
+  top: 391px;
+  left: 296px;
+  width: 167px;
+  height: 58px;
+  background: url("../images/bt-04.png") 0 0 no-repeat; }
+  .popup#login .login-btn:hover {
+    background: url("../images/bt-04.png") 0 -58px no-repeat; }
+.popup#login .signup {
+  position: absolute;
+  top: 457px;
+  left: 325px;
+  font-size: 18px; }
+  .popup#login .signup a {
+    color: #000;
+    text-decoration: underline; }
+.popup#login input {
+  position: relative;
+  top: -2px;
+  left: -2px;
+  width: 249px;
+  height: 34px;
+  padding-left: 6px;
+  background: transparent;
+  font-size: 18px;
+  border: 2px solid #13A08E; }
+.popup#fail .pop-close-btn {
+  top: 84px; }
+.popup#fail .popup-content {
+  width: 796px;
+  height: 350px;
+  background: url("../images/pp-pic-02.png"); }
+.popup#fail .msg {
+  position: absolute;
+  left: 262px;
+  top: 204px;
+  font-size: 24px; }
+.popup#fail .true-btn {
+  position: absolute;
+  top: 250px;
+  left: 368px;
+  width: 147px;
+  height: 58px;
+  background: url("../images/bt-05.png") 0 0 no-repeat; }
+  .popup#fail .true-btn:hover {
+    background: url("../images/bt-05.png") 0 -58px no-repeat; }
+.popup#win .pop-close-btn {
+  top: 95px; }
+.popup#win .popup-content {
+  width: 796px;
+  height: 401px;
+  background: url("../images/pp-pic-03.png"); }
+.popup#win .msg {
+  position: absolute;
+  left: 315px;
+  top: 198px;
+  font-size: 24px;
+  text-align: center; }
+  .popup#win .msg p ~ p {
+    margin-top: 3px; }
+.popup#win .true-btn {
+  position: absolute;
+  top: 283px;
+  left: 399px;
+  width: 147px;
+  height: 58px;
+  background: url("../images/bt-05.png") 0 0 no-repeat; }
+  .popup#win .true-btn:hover {
+    background: url("../images/bt-05.png") 0 -58px no-repeat; }
+.popup#record .pop-close-btn {
+  top: 0;
+  right: 43px;
+  width: 38px;
+  height: 34px;
+  background: url("../images/close.png"); }
+.popup#record .popup-content {
+  width: 930px; }
+.popup#record .item-contnet {
+  height: 230px; }
+.popup#record table th, .popup#record table td {
+  height: 45px; }
+.popup#record .item-title {
+  margin-top: 8px; }
+  .popup#record .item-title th {
+    border-bottom: none; }
+.popup#record .true-btn {
+  position: absolute;
+  top: 283px;
+  left: 399px;
+  width: 147px;
+  height: 58px;
+  background: url("../images/bt-05.png") 0 0 no-repeat; }
+  .popup#record .true-btn:hover {
+    background: url("../images/bt-05.png") 0 -58px no-repeat; }

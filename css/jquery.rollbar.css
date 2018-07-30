@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+  
+  RollBar - jQuery ScrollBar Plugin
+  -----------------------------------------------
+  
+  @author   flGravity
+  @created  4.4.12
+  @version  1.0
+  @site     http://codecanyon.net/user/flGravity
+  
+*/
+/* rollbar paths style */
+.rollbar-path-vertical, .rollbar-path-horizontal {
+  position: absolute;
+  background: url(../images/scroll-line.png) repeat-y;
+  z-index: 1 !important; }
+
+/* 橫*/
+.rollbar-path-horizontal {
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 0; }
+
+.rollbar-path-vertical {
+  right: 15px;
+  width: 10px;
+  /*height: 100%; */
+  /*width: 49px;*/
+    /*margin: -90px 0 0 0;
+	/*background:#ff9db4;*/ }
+
+/* rollbar paths inner shadow 
+.rollbar-path-vertical {
+ 	box-shadow: inset 1px 0px 1 rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 1px 0px 1 rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 1px 0px 0 rgba(0,0,0,0.1);
+}
+
+.rollbar-path-horizontal {
+ 	box-shadow: inset 0px 1px 1 rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0px 1px 1 rgba(0,0,0,0.1);
+	-webkit-box-shadow: inset 0px 1px 0 rgba(0,0,0,0.1);
+}
+
+
+/* rollbar handle style */
+.rollbar-handle {
+  position: relative;
+  top: 0;
+  left: -15px;
+  width: 43px;
+  height: 39px;
+  background-color: #fff;
+  background: url(../images/scroll-updown.png) 0 -1px no-repeat;
+  cursor: pointer; }
+
+.rollbar-path-vertical .rollbar-handle {
+  /*	height: 117px;
+  	width: 100%;*/ }
+
+.rollbar-path-horizontal .rollbar-handle {
+  width: 20%;
+  height: 100%; }
+
+/* round corners for rollbar handle and paths */
+/*
+.rollbar-path-vertical,
+.rollbar-path-horizontal,
+.rollbar-handle {
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+*/

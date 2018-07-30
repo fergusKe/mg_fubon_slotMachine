@@ -1,0 +1,138 @@
+body {
+  overflow-x: hidden; }
+
+.wrap {
+  position: relative;
+  width: 640px;
+  margin: 0 auto;
+  overflow: hidden;
+  font-size: 21px;
+  background-color: #028E7C; }
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 640px;
+  height: 99px;
+  background: url("../images/m-menu.png") 0 0 no-repeat;
+  z-index: 10; }
+  .nav li {
+    width: 133px;
+    height: 72px; }
+  .nav .logo {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    width: 168px;
+    height: 37px;
+    z-index: 10; }
+  .nav .nav-activity {
+    position: absolute;
+    top: 0;
+    left: 199px; }
+  .nav .nav-insurance {
+    position: absolute;
+    width: 164px;
+    left: 333px; }
+  .nav .nav-award {
+    position: absolute;
+    width: 141px;
+    left: 499px; }
+
+.footer {
+  position: relative;
+  padding: 15px 0 20px;
+  color: #FFF;
+  text-align: center;
+  background: #29B7A5; }
+  .footer a {
+    display: inline;
+    color: #FFF; }
+  .footer .footer-bg {
+    position: absolute;
+    top: -9px;
+    width: 100%;
+    height: 10px;
+    background: url("../images/m-bg-copyright.png"); }
+  .footer .f2, .footer .f3, .footer .f4, .footer .f5 {
+    margin-top: 8px; }
+  .footer .f1 {
+    font-size: 25px; }
+  .footer .f3 li {
+    display: inline-block; }
+    .footer .f3 li ~ li {
+      margin-left: 15px; }
+  .footer .f4 li {
+    display: inline-block; }
+    .footer .f4 li ~ li {
+      margin-left: 15px; }
+  .footer .line {
+    width: 1px;
+    height: 16px;
+    background: #FFF; }
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -320px;
+  width: 640px;
+  height: 100%;
+  z-index: 99;
+  overflow-y: auto; }
+  .popup .popup-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 100%;
+    background: #199f8e;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8; }
+  .popup .popup-box {
+    position: relative;
+    width: 640px;
+    height: 100%; }
+  .popup .popup-main {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden; }
+  .popup .popup-content {
+    position: relative;
+    margin: 0 auto;
+    color: #199f8e;
+    font-weight: 700; }
+  .popup .pop-close-btn {
+    position: absolute;
+    top: 108px;
+    right: 43px;
+    z-index: 99;
+    width: 75px;
+    height: 61px; }
+
+table, th, td {
+  border-collapse: collapse; }
+
+th, td {
+  padding: 5px;
+  border: 2px solid #FFF;
+  vertical-align: middle;
+  text-align: center; }
+
+table th {
+  background-color: #028e7c;
+  color: #FFF;
+  height: 40px; }
+
+table td {
+  background-color: #bce7e2;
+  color: #00685a;
+  height: 64px; }
+  table td a {
+    color: #00685a !important; }
