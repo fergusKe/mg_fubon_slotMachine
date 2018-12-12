@@ -36,11 +36,12 @@
 	function setButton() {
 		$('.slot-handle, .slot-txt').on('click', function(e) {
             e.preventDefault();
-            if(_indexObj.login){
-                gameStart();
-            }else{
-                showMag("not login");
-            }
+            gameStart();
+            // if(_indexObj.login){
+            //     gameStart();
+            // }else{
+            //     showMag("not login");
+            // }
             
 			//$('.slot-handle').addClass('active');
             // _slotMachine.stopAction(parseInt(Math.random() * 4));
